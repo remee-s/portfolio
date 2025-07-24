@@ -14,9 +14,11 @@ html, body{
 }
 #wrap{
     position: relative; /*header 정렬의 기준*/
-    min-width: 1920px;
+    width: 1920px;
+    margin: 0 auto;
     overflow: hidden;
 }
+
 /*글자를 숨겨야 하는 경우 blind클래스를 적용*/
 .blind {
     position: absolute;
