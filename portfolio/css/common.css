@@ -15,8 +15,8 @@ html, body{
 #wrap{
     position: relative; /*header 정렬의 기준*/
     width: 100%;
+    min-width: 1870px;
     margin: 0 auto;
-    overflow: hidden;
     text-align: center;
 }
 /*글자를 숨겨야 하는 경우 blind클래스를 적용*/

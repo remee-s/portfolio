@@ -33,13 +33,34 @@ header .txt2 span{
 }
 .visual .photo{
     width: 100%;
-    height: 1010px;
+    height: 1000px;
     background-color: #1d1d1d;
 }
 /* infor */
 .infor{
     text-transform: uppercase;
     color: #1d1d1d;
+    position: relative;
+}
+.infor::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 50%;
+    height: 100%;
+    background: url(../images/infor01_bg.png) repeat center center;
+}
+.infor::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
 }
 .infor .infor_wrap{
     display: flex;
@@ -95,7 +116,8 @@ header .txt2 span{
     gap: 40px;
 }
 .infor .tit3{
-    margin: 135px 45px 61px 45px;
+    background-color: #fff;
+    padding: 135px 45px 61px 45px;
 }
 .infor .tit3 .txt{
     display: flex;
@@ -211,6 +233,7 @@ header .txt2 span{
     padding: 144px 0 40px 0;
     color: #1d1d1d;
     background: url(../images/contents_bg.png)no-repeat center center / cover;
+    overflow: hidden;
 }
 .contents h2{
     font-size: 150px;
